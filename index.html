@@ -2,17 +2,20 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>コンピュータ基礎II 課題1 — 色の波紋</title>
-    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <title>色の波紋</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="app">
-      <canvas id="grid" width="540" height="540"></canvas>
-      <div id="controls">
-        <button id="clearBtn" title="書き直し">🗑️</button>
-      </div>
+    <canvas id="grid" width="540" height="540"></canvas>
+    <br />
+    <button id="clearBtn">🗑️</button>
+
+    <div id="stats">
+      <p>R <span><span id="barR"></span></span> <span id="valR">0%</span></p>
+      <p>G <span><span id="barG"></span></span> <span id="valG">0%</span></p>
+      <p>B <span><span id="barB"></span></span> <span id="valB">0%</span></p>
     </div>
-    <script src="./script.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
